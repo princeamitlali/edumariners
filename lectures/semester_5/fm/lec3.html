@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EduMariners-Educating Marine Engineers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../../css/design.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="topnav" id="myTopnav">
+			<IMG style="float: left; margin-left: 1em;" SRC="../../../icon.png" ALT="some text" WIDTH=50em HEIGHT=46em>
+			<h1>EduMariners</h1>
+		<div class="topnav-right">
+          <a href="../../../home.html">Home</a>
+          <a href="../../../news.html">News</a>
+          <div class="dropdown">
+    <button class="dropbtn" onclick="Function()">Lectures & Downloads
+      
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="../../semester_1/semester1.html">Semester 1</a>
+      <!--<a href="../../semester_2/semester2.html">Semester 2</a>-->
+      <a href="../../semester_3/semester3.html">Semester 3</a>
+      <!--<a href="../../semester_4/semester4.html">Semester 4</a>-->
+      <a href="../../semester_5/semester5.html">Semester 5</a>
+      <!--<a href="../../semester_6/semester6.html">Semester 6</a>-->
+      <!--<a href="../../semester_7/semester7.html">Semester 7</a>-->
+      <!--<a href="../../semester_8/semester8.html">Semester 8</a>-->
+    </div>
+  </div>
+          <a href="../../../contact.html">Contact</a>
+          <a href="../../../about.html">About</a>
+	  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	   			<i class="fa fa-bars"></i></a>
+   			</div>
+  		</div>
+
+
+   <footer class="footer">
+     EduMariners-Educating Marine Engineers
+   </footer>
+  	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+	}
+	function Function() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+	</script>
+	<div class="row">
+  <div class="side">
+<button class="accordion">Fluid Mechanics</button>
+<div class="panel">
+  <button class="submenu" ><a href="../fm/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../fm/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../fm/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../fm/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Marine IC Engine</button>
+<div class="panel">
+  <button class="submenu" ><a href="../mice/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../mice/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../mice/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../mice/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Auxillary Engine</button>
+<div class="panel">
+  <button class="submenu" ><a href="../ae/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../ae/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../ae/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../ae/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Material Science</button>
+<div class="panel">
+  <button class="submenu" ><a href="../ms/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../ms/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../ms/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../ms/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Naval Architecture</button>
+<div class="panel">
+  <button class="submenu" ><a href="../na/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../na/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../na/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../na/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Management And Economics</button>
+<div class="panel">
+  <button class="submenu" ><a href="../me/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../me/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../me/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../me/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Marine Workshop</button>
+<div class="panel">
+  <button class="submenu" ><a href="../mw/lec1.html">Lecture 1</a></button>
+  <button class="submenu" ><a href="../mw/lec2.html">Lecture 2</a></button>
+  <button class="submenu" ><a href="../mw/lec3.html">Lecture 3</a></button>
+  <button class="submenu" ><a href="../mw/lec4.html">Lecture 4</a></button>
+</div>
+<button class="accordion">Syllabus</button>
+<div class="panel">
+ <button class="submenu" ><a href="../home.html">Fluid Mechanics</a></button>
+  <button class="submenu" ><a href="../home.html">Marine IC Engine</a></button>
+  <button class="submenu" ><a href="../home.html">Auxillary Engine</a></button>
+  <button class="submenu" ><a href="../home.html">Material Science</a></button>
+  <button class="submenu" ><a href="../home.html">Naval Architecture</a></button>
+  <button class="submenu" ><a href="../home.html">Management And Economics</a></button>
+  <button class="submenu" ><a href="../home.html">Marine Workshop</a></button>
+</div>
+<button class="accordion">Notes</button>
+<div class="panel">
+  <button class="submenu" ><a href="../home.html">Fluid Mechanics</a></button>
+  <button class="submenu" ><a href="../home.html">Marine IC Engine</a></button>
+  <button class="submenu" ><a href="../home.html">Auxillary Engine</a></button>
+  <button class="submenu" ><a href="../home.html">Material Science</a></button>
+  <button class="submenu" ><a href="../home.html">Naval Architecture</a></button>
+  <button class="submenu" ><a href="../home.html">Management And Economics</a></button>
+  <button class="submenu" ><a href="../home.html">Marine Workshop</a></button>
+</div>
+<button class="accordion">Previous Year Question Papers</button>
+<div class="panel">
+  <button class="submenu" ><a href="../home.html">Fluid Mechanics</a></button>
+  <button class="submenu" ><a href="../home.html">Marine IC Engine</a></button>
+  <button class="submenu" ><a href="../home.html">Auxillary Engine</a></button>
+  <button class="submenu" ><a href="../home.html">Material Science</a></button>
+  <button class="submenu" ><a href="../home.html">Naval Architecture</a></button>
+  <button class="submenu" ><a href="../home.html">Management And Economics</a></button>
+  <button class="submenu" ><a href="../home.html">Marine Workshop</a></button>
+</div>
+
+</div>
+<div class="main">
+  <iframe class="video" width="600px" height="480px" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder=".50em" gesture="media" allowfullscreen>
+</iframe></div>
+</div></div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+	</body>
+</html>

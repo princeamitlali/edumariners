@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EduMariners-Educating Marine Engineers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/design.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="topnav" id="myTopnav">
+			<IMG style="float: left; margin-left: 1em;" SRC="icon.png" ALT="some text" WIDTH=50em HEIGHT=46em>
+			<h1>EduMariners</h1>
+		<div class="topnav-right">
+          <a class="active" href="home.html">Home</a>
+          <a href="news.html">News</a>
+          <div class="dropdown">
+    <button class="dropbtn" onclick="Function()">Lectures & Downloads
+
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="lectures/semester_1/semester1.html">Semester 1</a>
+      <!--<a href="lectures/semester_2/semester2.html">Semester 2</a>-->
+      <a href="lectures/semester_3/semester3.html">Semester 3</a>
+      <!--<a href="lectures/semester_4/semester4.html">Semester 4</a>-->
+      <a href="lectures/semester_5/semester5.html">Semester 5</a>
+      <!--<a href="lectures/semester_6/semester6.html">Semester 6</a>-->
+      <!--<a href="lectures/semester_7/semester7.html">Semester 7</a>-->
+     <!-- <a href="lectures/semester_8/semester8.html">Semester 8</a>-->
+    </div>
+  </div>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+	  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	   			<i class="fa fa-bars"></i></a>
+   			</div>
+  		</div>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/pic1.jpg" style="width:100%">
+  <img class="mySlides" src="images/pic2.jpg" style="width:100%">
+  <img class="mySlides" src="images/pic3.jpg" style="width:100%">
+  <img class="mySlides" src="images/pic4.jpg" style="width:100%">
+
+  <button class="slidebutton w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slidebutton w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<div>
+  <h2>Welcome to EduMariners</h2>
+</div>
+<h3>This website is NOT an official website of Indian Maritime University</h3>
+   <footer class="footer">
+     EduMariners-Educating Marine Engineers
+   </footer>
+  	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+	}
+	function Function() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+	</script>
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+	</body>
+</html>
